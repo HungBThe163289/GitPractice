@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Su dung Splice JS</h1>
+        <script>
+            let purson = {
+                firstName: "Bui",
+                lastName: "Hung",
+                get fullName() {
+                    return this.firstName + " " + this.lastName;
+                },
+                set fullName(n) {
+                    n = n.split(" ");
+                    this.firstName = n[0];
+                    this.lastName = n[n.length - 1];
+                },
+            };
+            purson.fullName = "N T K A";
+console.log(purson.fullName)
+
+            //             let list_users = ['Bui', 'Tuan', 'Hung', 'Dep']
+            //             list_users.push('Zai');
+            //             list_users.unshift('Mr');
+            //             //  console.log(list_users);
+            // let t=0;
+            //             let list_number = [2, 4, 9, 45, 12, 64, 55, 77, 66, 7, 17, 24, 22];
+            //             // let max_value = Math.max.apply(null, list_number);    
+
+            //             let new_array= [];
+            //             new_array = list_number.map(function(currentValue){
+            //                 return currentValue + 5 ;
+            //             })
+            //             console.log(new_array);
+
+            // list_number.forEach(function (currentValue, index,arr) {
+            //     arr[index] = currentValue + 1;
+            // });
+            // console.log(list_number);
+            // document.write(list_number + ' new ')
+
+            // let list_even = [];
+
+            // for (let value of list_number) {
+            //     if (value % 2 == 0) {
+            //         list_even.push(value);
+            //     }
+            // }
+
+            // list_even.shift();
+            // console.log(list_even.length);
+
+            //     if (n % 2 == 0) {
+            //         return true;
+            //     }
+            // }
+            // n = 6;
+            // if (isEven(n)) {
+            //     document.write(n + " la so chan");
+            // }
+
+            // let rs, num;
+            // num = 10;
+            // rs = (num % 2 != 0) ? true : false;
+            // console.log(rs);
+
+            // let person = {
+            //     name: 'tuan hung' ,
+            //     age: 20,
+            //     gender: 'male',
+            // }
+
+            // for(let key in person){
+            //     document.write(key+ ': ' + person[key] + "</br>");
+            // }
+
+            // let Array = ['red','green','blue'];
+            // for (let key in Array){
+            //     document.write(Array[key] + "</br>");
+            // }
+            // let list_number = [2, 4, 6, 7, 9];
+            // let t = 0;
+
+            // for (let value of list_number) {
+            //     if (value % 2 == 0) {
+            //         t += value;
+            //     }
+            // }
+            // document.write(t);
+
+            // let i = 1;
+            // n = 10;
+
+            // while (i <= n) {
+            //     if (i % 2 == 0) {
+            //         document.write(i + "</br>");
+            //     }
+            //     i++;
+            // }
+
+            // let i = 1;
+            // let n = 20;
+            // do {
+            //     document.write(i + "</br>");
+            //     i++;
+            // } while (i > n);
+            // {
+            // }
+        </script>
+    </body>
+</html>
